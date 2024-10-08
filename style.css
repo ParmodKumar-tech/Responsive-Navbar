@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+#header #logo{
+    font-size: 2rem;
+    margin: 10px;
+    
+}
+
+#header #logo::first-letter{
+    color:#0050d5;
+}
+
+#header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    align-items: center;
+    
+}
+
+
+
+
+#header nav a{
+    margin: 23px;   
+    padding: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    border-bottom: solid transparent 3px;
+    transition: .3s ease;
+     
+}
+
+#header nav a:hover{
+    border-bottom: solid #0050d5 3px;
+    color: #0050d5;
+    
+   
+}
+
+#btn{
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 6px;
+    background-color: #0050d5;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s ease;
+    
+   
+}
+
+#header #btn:hover{
+    color: black;
+}
+
+
+
+#main h1,p{
+    text-align: center;
+    
+}
+
+
+#check{
+    display: none;
+
+}
+#check:checked ~ nav{
+   
+    left: 0;
+  
+    
+
+}
+
+#header img{
+    width: 20px;
+}
+
+#header label{
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+#main{
+    background-color:#0050d5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#main div{
+    font-weight: 800; 
+    color: white;
+    text-align: center;
+}
+#main h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 0 0.4rem;
+}
+
+#main p{
+    letter-spacing: 1px;
+    font-size: medium;
+    line-height: 1.4;
+    margin: 10px 1rem;
+}
+
+#main #btn{
+    background-color: white;
+    color:#0050d5;
+}
+
+
+@media (max-width:739px){
+    #header nav a{
+      
+        margin: 8px;
+        transition: .3s ease;
+    }
+}
+
+@media(max-width:619px){
+    #header nav{
+        position: absolute;
+        left:-100%;
+        right:0;
+        top: 100%;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        padding: 8px;
+        transition: .3s ease;
+        
+    }
+  
+    #header label{
+        display: block;
+
+    }
+    #header nav a{
+        margin-top:15px;
+        display: block;
+        box-shadow: 0 0 7px #0050d5;
+        border-radius: 7px;
+        font-size: 17px;
+       
+    }
+
+
+
+
+
+
+    
+}
